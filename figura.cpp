@@ -20,9 +20,18 @@ class figura{
 	
 	std::string color = "";
 public:
-    figura( string colord){
-        
+    figura( string colord){ //Constructor 
+        color=colord;
     }
+      double getColor() //Getters
+     {
+	return color;
+     }
+      
+       void setColor(double colorf){  //Setters
+             color=colorf;  
+             
+         }
     virtual void setAltura()=0;
     virtual void setBase()=0;
     virtual void setColor()=0;
